@@ -16,7 +16,7 @@
    This step needs to be done just for the first time you upload a model. 
    2) Upload the model RDF specification file.
    
-   <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_1.png" align="center" width="1000"/>
+   <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_1.png" align="center" width="500"/>
    
    3) Complete the missing fields. Check out how to get most of your model documentation
     
