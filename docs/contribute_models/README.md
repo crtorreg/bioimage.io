@@ -8,7 +8,7 @@
 
 ## Tutorial
 
- <img src="contribute_models/contribute_model.png" align="center" width="1000"/>
+ <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/contribute_model.png" align="center" width="1000"/>
 
 Model contribution means that you will upload a fully-documented trained model to a public repository using the Upload Buttom from [Bioimage Model  Zoo](https://bioimage.io/#/). Uploading your model to the Bioimage Model Zoo ensures that:
 - The model is well documented.
