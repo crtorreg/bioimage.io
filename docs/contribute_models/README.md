@@ -20,7 +20,7 @@ The model package contains the trained weights together with the architecture, e
 
 Once the model is uploaded to Zenodo, it will be created a pull request in [bioimage-io/collection-bioimage-io repository](https://github.com/bioimage-io/collection-bioimage-io/pulls) assessed by a Continuos Integration (CI) workflow to check for its usability in at least one of the consumer software. When the pull request is created, you must take care to check whether the new item or version passes the different requirements. Once it passes, it should be approved by at least one of the BioImage.IO admin team member and later it will be displayed in the BioImage Model Zoo. 
 
-Ready to follow the [Tutorial](/contribute_models/tutorials.md)?
+Ready to follow the [Tutorial](/contribute_models/tutorials.md)? 
 
 ## Contributing other resource types
 
