@@ -1,6 +1,6 @@
 # Contribute to BioImage.IO
 
-You are welcome to submit your **models**, **datasest**, **applicaitons** and Jupyter **notebooks** to BioImage.IO.
+You are welcome to submit your **models**, **datasets**, **applications** and Jupyter **notebooks** to BioImage.IO.
 
 To add an resource item to BioImage.IO, you need to provide a set of basic information about the resouce, including name, description, authors etc. and we will generate a resource card to display in the website.
 
