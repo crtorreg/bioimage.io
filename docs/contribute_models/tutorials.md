@@ -8,7 +8,7 @@
    - Each field on the file can be either mandatory or optional. You can use [our template](https://github.com/bioimage-io/bioimage-io-models/pull/55/files#diff-f6c64be5b9d764d0964654908b2ed4495fccc7624e58e9360bfdc6cef169edbe) to fill in the required information. 
    - [Here is an example](https://github.com/bioimage-io/pytorch-bioimage-io/blob/master/specs/models/unet2d_nuclei_broad/UNet2DNucleiBroad.model.yaml) of a filled configuration YAML file. In the Bioimage Model Zoo web page you will also find different examples. 
 
-3. It is recommended before to upload the model into zenodo to ensure that your model is compatible to the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). All the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli).
+3. It is recommended before to upload the model into zenodo to ensure that your model is compatible to the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). To do that a python package has been created, all the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli).
 
 4. Once your model is ready, we can start uploading the model into the [bioimage.io website](https://bioimage.io/#/). You should go to the [bioimage.io website](https://bioimage.io/#/) an dclick on `+Upload`, then follow the steps:
 
@@ -24,7 +24,8 @@
    
    <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_3.png" align="center" width="1000"/>
    
-
+   4) Validate your model. It is needed to click on the **validate buttom** in order to verify the compatibility of the model with the Bioimage.io specifications. Once the validation has been succesfully passed, you can load your model into the [bioimage.io website](https://bioimage.io/#/). 
+   
 
 ## How to get most of your model documentation
 ### Model Tags
@@ -37,7 +38,7 @@ The tags in the model RDF are used to search for each model in the BioImage Mode
 
 ### Model links
 
-## Considerations for the model description file (format_version>=0.3.0)
+## Considerations for the model description file (format_version>=0.4.2)
 When following the BioImage.IO Model Resource Description File Specification provided at https://github.com/bioimage-io/spec-bioimage-io, it is important that you pay special attention to the following:
 * Choose an input and output test images so we can check that your model runs correctly in the chosen [consumer software](https://bioimage.io/docs/#/consumer_software/model_runner)
 * Choose a representative cover image of the task performed by your model. This image will be used in the model card to guide the users through the model search.
