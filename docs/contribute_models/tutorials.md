@@ -20,11 +20,12 @@
    
    3) Complete the missing fields. Check out how to get most of your model documentation
     
-   <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_2.png" align="center" width="1000"/>
+   <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_2.png" align="center" width="500"/>
    
-   <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_3.png" align="center" width="1000"/>
+   <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_3.png" align="center" width="500"/>
    
    4) Validate your model. It is needed to click on the **validate buttom** in order to verify the compatibility of the model with the Bioimage.io specifications. Once the validation has been succesfully passed, you can load your model into the [bioimage.io website](https://bioimage.io/#/). 
+   <img src="https://github.com/crtorreg/bioimage.io/blob/crtorreg-patch-1/docs/contribute_models/upload_4.png" align="center" width="500"/>
    
 
 ## How to get most of your model documentation
