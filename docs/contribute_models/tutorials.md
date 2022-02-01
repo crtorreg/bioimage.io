@@ -2,25 +2,26 @@
 # Tutorial for contributing models
 **Note: only PyTorch and TensorFlow models are supported at the moment. We are working on alternative model formats such as ONNX.**
 
-For contributing models, it is needed to first generate the model, then upload the model to Zenodo, wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear.
+For contributing models, it is needed to first generate the model, then upload the model to Zenodo, wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear. All these steps are explained below.
+
 
 ## Model generation
 
-1. Generate and check (1) that your model is supported by the BioImage Model Zoo and (2) it is compatible with at least one of the consumer software. Check it [here](https://github.com/bioimage-io/spec-bioimage-io/blob/master/supported_formats_and_operations.md). There are two ways to generate this model depending on the user type. 
-   - For most users, 
-   - For developers, 
+1. Generate your model and check (1) that it is supported by the BioImage Model Zoo and (2) it is compatible with at least one of the consumer software. Check it [here](https://github.com/bioimage-io/spec-bioimage-io/blob/master/supported_formats_and_operations.md). There are two ways to generate this model depending on the user type. 
+   - For most users, the model package can be generated from compatible software tools (e.g. zerocost notebooks, fiji plugin etc.)
+   - For developers, the model package can be generated manually via the bioimageio.core package ((e.g. Function to build the model)[https://github.com/bioimage-io/core-bioimage-io-python/blob/902262bdce60a4c905f7b4a3b5646dc9ae68122f/bioimageio/core/build_spec/build_model.py#L572-L589]).
 
-3. Create a model specification file according to the [BioImage.IO Model Resource Description File Specification](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). 
+The model specification should fullfil the following criteria [BioImage.IO Model Resource Description File Specification](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). 
    - Each field on the file can be either mandatory or optional. You can use [our template](https://github.com/bioimage-io/bioimage-io-models/pull/55/files#diff-f6c64be5b9d764d0964654908b2ed4495fccc7624e58e9360bfdc6cef169edbe) to fill in the required information. 
    - [Here is an example](https://github.com/bioimage-io/pytorch-bioimage-io/blob/master/specs/models/unet2d_nuclei_broad/UNet2DNucleiBroad.model.yaml) of a filled configuration YAML file. In the Bioimage Model Zoo web page you will also find different examples. 
 
-4. It is recommended before to upload the model into zenodo to ensure that your model is compatible to the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). To do that a python package has been created, all the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli). More specifically, with *test-model* you will check the validity of your model specification file and  later, with *validation-model* you will prove that your model runs properly. 
+4. It is recommended before to upload the model into zenodo to ensure locally that your model is compatible to the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). To do that a python package has been created, all the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli). More specifically, with `test-model` you will check the validity of your model specification file and  later, with `validation-model` you will prove that your model runs properly. 
 
 
 ## Upload to Zenodo repository
-5. Once your model is ready, we can start uploading the model into the [bioimage.io website](https://bioimage.io/#/). You should go to the [bioimage.io website](https://bioimage.io/#/) an dclick on `+Upload`, then follow the steps:
+5. Once your model is ready, we can start uploading the model into the [bioimage.io website](https://bioimage.io/#/). You should go to the [bioimage.io website](https://bioimage.io/#/) an click on `+Upload`, then follow the steps:
 
-   - Log in to Zenodo and give access to the BioEngine Application. You will see an automatic message once you are logged in. If not, refresh the page.
+   - Log in to Zenodo and give access to the BioEngine Application though . You will see an automatic message once you are logged in. If not, refresh the page.
    This step needs to be done just for the first time you upload a model. 
    - Upload the model RDF specification file.
    
