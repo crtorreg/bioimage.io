@@ -25,7 +25,9 @@ The model specification should fullfil the following criteria [BioImage.IO Model
    This step needs to be done just for the first time you upload a model. 
    - Upload the model RDF specification file.
    
+   <p align="center">
    <img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/upload_1.png" align="center" width="500"/>
+   </p>
    
    - Complete the missing fields. Check out how to get most of your model documentation
     
