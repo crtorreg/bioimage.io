@@ -39,6 +39,8 @@ For contributing models, it is needed to first generate the model, then upload t
 
 Once your model has been upload succesfully into Zenodo repository...
 
+Model changes...
+
 ## How to get most of your model documentation
 ### Model Tags
 
