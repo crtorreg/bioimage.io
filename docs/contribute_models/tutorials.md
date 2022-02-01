@@ -9,7 +9,7 @@ For contributing models, it is needed to first generate the model, then upload t
 
 1. Generate your model and check (1) that it is supported by the BioImage Model Zoo and (2) it is compatible with at least one of the consumer software. Check it [here](https://github.com/bioimage-io/spec-bioimage-io/blob/master/supported_formats_and_operations.md). There are two ways to generate this model depending on the user type. 
    - For most users, the model package can be generated from compatible software tools (e.g. zerocost notebooks, fiji plugin etc.)
-   - For developers, the model package can be generated manually via the bioimageio.core package ((e.g. Function to build the model)[https://github.com/bioimage-io/core-bioimage-io-python/blob/902262bdce60a4c905f7b4a3b5646dc9ae68122f/bioimageio/core/build_spec/build_model.py#L572-L589]).
+   - For developers, the model package can be generated manually via the bioimageio.core package [(e.g. Function to build the model)](https://github.com/bioimage-io/core-bioimage-io-python/blob/902262bdce60a4c905f7b4a3b5646dc9ae68122f/bioimageio/core/build_spec/build_model.py#L572-L589).
 
 The model specification should fullfil the following criteria [BioImage.IO Model Resource Description File Specification](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). 
    - Each field on the file can be either mandatory or optional. You can use [our template](https://github.com/bioimage-io/bioimage-io-models/pull/55/files#diff-f6c64be5b9d764d0964654908b2ed4495fccc7624e58e9360bfdc6cef169edbe) to fill in the required information. 
@@ -43,7 +43,7 @@ The model specification should fullfil the following criteria [BioImage.IO Model
 
 ## Model approval
 
-Once your model has been uploaded succesfully into Zenodo repository a pull request is gonna be created in the (bioimage-io collection repository)[https://github.com/bioimage-io/collection-bioimage-io/pulls]. During this PR the model must pass several checks in the CI repo to be accepted, once pass all these steps a member of the Bioimage Model Zoo team would accept the model in order to be visible trough the (website)[https://bioimage.io/#/]. 
+Once your model has been uploaded succesfully into Zenodo repository a pull request is gonna be created in the [bioimage-io collection repository](https://github.com/bioimage-io/collection-bioimage-io/pulls). During this PR the model must pass several checks in the CI repo to be accepted, once pass all these steps a member of the Bioimage Model Zoo team would accept the model in order to be visible trough the [website](https://bioimage.io/#/). 
 
 It is important to note that after the model get accepted, you can make corrections by clicking the pencil/edit button on the model card to edit meta information, create a new version etc. If a new version is detected, it will trigger the CI under the collection repo, and repeat the approval process for the new version(s).
 
@@ -57,7 +57,7 @@ The tags in the model RDF are used to search for each model in the BioImage Mode
 **Tags**: `denoising`, `PSSR`, `microtubules`, `encoder-decoder`, `deblurring`, `fluorescence`, `2D`, `HeLa cells`, `deepimagej`, `ilastik`, `image restoration`, `trained-model` etc.
 
 ## Considerations for the model description file (format_version>=0.4.2)
-When following the BioImage.IO Model Resource Description File Specification provided at https://github.com/bioimage-io/spec-bioimage-io, it is important that you pay special attention to the following:
+When following the [BioImage.IO Model Resource Description File Specification](https://github.com/bioimage-io/spec-bioimage-io), it is important that you pay special attention to the following:
 * Choose an input and output test images so we can check that your model runs correctly in the chosen [consumer software](https://bioimage.io/docs/#/consumer_software/model_runner)
 * Choose a representative cover image of the task performed by your model. This image will be used in the model card to guide the users through the model search.
 * Pre-processing and post-processing should be always described. For that, you can check which [processing routines are supported](https://github.com/bioimage-io/spec-bioimage-io/blob/master/supported_formats_and_operations.md#pre--and-postprocessing) at the moment. 
