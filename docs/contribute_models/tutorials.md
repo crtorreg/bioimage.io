@@ -47,16 +47,14 @@ Once your model has been uploaded succesfully into Zenodo repository a pull requ
 
 It is important to note that after the model get accepted, you can make corrections by clicking the pencil/edit button on the model card to edit meta information, create a new version etc. If a new version is detected, it will trigger the CI under the collection repo, and repeat the approval process for the new version(s).
 
-## How to get most of your model documentation
-### Model Tags
+# How to get most of your model documentation
+## Model Tags
 
 The tags in the model RDF are used to search for each model in the BioImage Model Zoo. The more informative tags you write, the easier it will be for a potential user to find your model. Example:
 
 **My model description**: An encoder-decoder trained for denoising of point-scanning super-resolution microsocpy images of HeLa cells microtubules
 
 **Tags**: `denoising`, `PSSR`, `microtubules`, `encoder-decoder`, `deblurring`, `fluorescence`, `2D`, `HeLa cells`, `deepimagej`, `ilastik`, `image restoration`, `trained-model` etc.
-
-### Model links
 
 ## Considerations for the model description file (format_version>=0.4.2)
 When following the BioImage.IO Model Resource Description File Specification provided at https://github.com/bioimage-io/spec-bioimage-io, it is important that you pay special attention to the following:
