@@ -15,7 +15,7 @@ The model specification should fullfil the following criteria [BioImage.IO Model
    - Each field on the file can be either mandatory or optional. You can use [our template](https://github.com/bioimage-io/bioimage-io-models/pull/55/files#diff-f6c64be5b9d764d0964654908b2ed4495fccc7624e58e9360bfdc6cef169edbe) to fill in the required information. 
    - [Here is an example](https://github.com/bioimage-io/pytorch-bioimage-io/blob/master/specs/models/unet2d_nuclei_broad/UNet2DNucleiBroad.model.yaml) of a filled configuration YAML file. In the Bioimage Model Zoo web page you will also find different examples. 
 
-4. It is recommended before to upload the model into zenodo to ensure locally that your model is compatible to the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). To do that a python package has been created, all the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli). More specifically, with `test-model` you will check the validity of your model specification file and  later, with `validation-model` you will prove that your model runs properly. 
+4. It is recommended before to upload the model into zenodo to ensure locally that your model is compatible to the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). To do that a python package called ´bioimageio.core´ has been created, all the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli). More specifically, with `test-model` you will check the validity of your model specification file and  later, with `validation-model` you will prove that your model runs properly. 
 
 
 ## Upload to Zenodo repository
@@ -38,9 +38,9 @@ The model specification should fullfil the following criteria [BioImage.IO Model
 
 ## Model approval
 
-Once your model has been upload succesfully into Zenodo repository...
+Once your model has been uploaded succesfully into Zenodo repository a pull request is gonna be created in the (bioimage-io collection repository)[https://github.com/bioimage-io/collection-bioimage-io/pulls]. During this PR the model must pass several checks in the CI repo to be accepted, once pass all these steps a member of the Bioimage Model Zoo team would accept the model in order to be visible trough the (website)[https://bioimage.io/#/]. 
 
-Model changes...
+It is important to note that after the model get accepted, you can make corrections by clicking the pencil/edit button on the model card to edit meta information, create a new version etc. If a new version is detected, it will trigger the CI under the collection repo, and repeat the approval process for the new version(s).
 
 ## How to get most of your model documentation
 ### Model Tags
