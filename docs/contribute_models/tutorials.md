@@ -46,7 +46,7 @@ For contributing models, it is needed to (A) generate the model, (B) upload the 
 
 ## C. Model approval
 
-5. Once your model has been uploaded successfully into the Zenodo repository a pull request is gonna be created in the [bioimage-io collection repository](https://github.com/bioimage-io/collection-bioimage-io/pulls). During this PR the model must pass several checks in the CI repo to be accepted, once pass all these steps a member of the Bioimage Model Zoo team would accept the model to be visible through the [website](https://bioimage.io/#/). 
+5. Once your model has been uploaded successfully into the Zenodo repository a pull request (PR) is gonna be created in the [bioimage-io collection repository](https://github.com/bioimage-io/collection-bioimage-io/pulls). During this PR the model must pass several checks in the CI repo to be accepted, once pass all these steps a member of the Bioimage Model Zoo team would accept the model to be visible through the [website](https://bioimage.io/#/). 
 
 6. It is important to note that after the model gets accepted, you can make corrections by clicking the pencil/edit button on the model card to edit meta information, create a new version etc. If a new version is detected, it will trigger the CI under the collection repo, and repeat the approval process for the new version(s).
 
