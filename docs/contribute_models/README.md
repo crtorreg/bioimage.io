@@ -12,8 +12,6 @@ Once the model is uploaded to Zenodo, it will be created a pull request in [bioi
 
 Ready to follow the [Tutorial](/contribute_models/tutorials.md)?
 
-<img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/contribute_model.png" align="center" width="1000"/>
-
 
 ## Model contribution requirements:
 
