@@ -2,13 +2,13 @@
 # Tutorial for contributing models
 **Note: only PyTorch and TensorFlow models are supported at the moment. We are working on alternative model formats such as ONNX.**
 
-For contributing models, it is needed to (1) generate the model, (2) upload the model to Zenodo, (3) wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear. All these steps are explained below.
+For contributing models, it is needed to (A) generate the model, (B) upload the model to Zenodo, (C) wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear. All these steps are explained below.
 
 <p align="center">
 <img src="https://github.com/crtorreg/bioimage.io/blob/crtorreg-patch-1/docs/contribute_models/contribute_model.png" align="center" width="1000"/>
 </p>
 
-## Model generation
+## A. Model generation
  
 1. Generate your model and check (1) that it is supported by the BioImage Model Zoo and (2) it is compatible with at least one of the consumer software. Check it [here](https://github.com/bioimage-io/spec-bioimage-io/blob/master/supported_formats_and_operations.md). There are two ways to generate this model depending on the user type. 
    - For most users, the model package can be generated from compatible software tools (e.g. zerocost notebooks, Fiji plugin etc.)
@@ -21,7 +21,7 @@ For contributing models, it is needed to (1) generate the model, (2) upload the 
 3. It is recommended before uploading the model into zenodo to ensure locally that your model is compatible with the latest [Bioimage.io model format](https://github.com/bioimage-io/spec-bioimage-io/blob/gh-pages/model_spec_latest.md). To do that a python package called ´bioimageio.core´ has been created, all the steps to validate and test your model are available in the following [documentation](https://github.com/bioimage-io/spec-bioimage-io#bioimageio-cli). More specifically, with `test-model` you will check the validity of your model specification file and later, with `validation-model` you will prove that your model runs properly. 
 
 
-## Upload to Zenodo repository
+## B. Upload to Zenodo repository
 4. Once your model is ready, we can start uploading the model to the [bioimage.io website](https://bioimage.io/#/). You should go to the [bioimage.io website](https://bioimage.io/#/) and click on `+Upload`, then follow the steps:
 
    - Log in to Zenodo and give access to the BioEngine Application through email verification. You will see an automatic message once you are logged in. If not, refresh the page.
@@ -44,7 +44,7 @@ For contributing models, it is needed to (1) generate the model, (2) upload the 
    <img src="https://github.com/crtorreg/bioimage.io/blob/crtorreg-patch-1/docs/contribute_models/upload_4.png" align="center" width="500"/>
    </p>
 
-## Model approval
+## C. Model approval
 
 5. Once your model has been uploaded successfully into the Zenodo repository a pull request is gonna be created in the [bioimage-io collection repository](https://github.com/bioimage-io/collection-bioimage-io/pulls). During this PR the model must pass several checks in the CI repo to be accepted, once pass all these steps a member of the Bioimage Model Zoo team would accept the model to be visible through the [website](https://bioimage.io/#/). 
 
