@@ -5,7 +5,7 @@
 For contributing models, it is needed to (1) generate the model, (2) upload the model to Zenodo, (3) wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear. All these steps are explained below.
 
 <p align="center">
-<img src="https://github.com/crtorreg/bioimage.io/blob/main/docs/contribute_models/contribute_model.png" align="center" width="1000"/>
+<img src="https://github.com/crtorreg/bioimage.io/blob/crtorreg-patch-1/docs/contribute_models/contribute_model.png" align="center" width="1000"/>
 </p>
 
 ## Model generation
