@@ -2,7 +2,7 @@
 # Tutorial for contributing models
 **Note: only PyTorch and TensorFlow models are supported at the moment. We are working on alternative model formats such as ONNX.**
 
-For contributing models, it is needed to first generate the model, then upload the model to Zenodo, wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear. All these steps are explained below.
+For contributing models, it is needed to (1) generate the model, (2) upload the model to Zenodo, (3) wait for the Bioimage Model Zoo approval and respond to the potential issues that can appear. All these steps are explained below.
 
 
 ## Model generation
