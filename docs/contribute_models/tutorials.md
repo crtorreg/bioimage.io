@@ -9,7 +9,7 @@ For contributing models, it is needed to (1) generate the model, (2) upload the 
 </p>
 
 ## Model generation
-
+ 
 1. Generate your model and check (1) that it is supported by the BioImage Model Zoo and (2) it is compatible with at least one of the consumer software. Check it [here](https://github.com/bioimage-io/spec-bioimage-io/blob/master/supported_formats_and_operations.md). There are two ways to generate this model depending on the user type. 
    - For most users, the model package can be generated from compatible software tools (e.g. zerocost notebooks, Fiji plugin etc.)
    - For developers, the model package can be generated manually via the bioimageio.core package [(e.g. Function to build the model)](https://github.com/bioimage-io/core-bioimage-io-python/blob/902262bdce60a4c905f7b4a3b5646dc9ae68122f/bioimageio/core/build_spec/build_model.py#L572-L589).
